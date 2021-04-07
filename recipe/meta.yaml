@@ -1,4 +1,4 @@
-{% set version = '0.9.5' %}
+{% set version = "0.9.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bsts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bsts/bsts_{{ version }}.tar.gz
-  sha256: b85371e62f116b63e50bbcdbf32c363f2244e97ced906f008defbf7e8a13089f
+  sha256: af0f0df5c5eb9398493ad07ad51c48f891672b6921590e19b0bc79485e515d2c
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -52,11 +52,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=bsts
   license: LGPL-2.1-only
-  summary: Time series regression using dynamic linear models fit using MCMC. See Scott and Varian
-    (2014) <DOI:10.1504/IJMMNO.2014.059942>, among many other sources.
+  summary: Time series regression using dynamic linear models fit using MCMC. See Scott and Varian (2014) <DOI:10.1504/IJMMNO.2014.059942>, among many other sources.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1
     - LICENSE
 
 extra:
