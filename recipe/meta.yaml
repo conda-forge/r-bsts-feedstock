@@ -1,4 +1,4 @@
-{% set version = "0.9.7" %}
+{% set version = "0.9.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bsts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bsts/bsts_{{ version }}.tar.gz
-  sha256: 545db97be72d8fd9517c7df93bd40ecb0447ddfbdfc55a6f8402fc13790e3f02
+  sha256: 8c8ef3cd2bdb6d23fe72c74971ceb88847d215091bdc76fae3765f9b99430090
 
 build:
   merge_build_host: true  # [win]
