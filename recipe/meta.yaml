@@ -32,14 +32,14 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-boom >= 0.9.10
+    - r-boom >=0.9.10
     - r-boomspikeslab >=1.2.3
     - r-xts
     - r-zoo >=1.8
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - r-boom >= 0.9.10
+    - r-boom >=0.9.10
     - r-boomspikeslab >=1.2.3
     - r-xts
     - r-zoo >=1.8
