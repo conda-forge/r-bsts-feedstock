@@ -32,15 +32,15 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-boom >=0.9.6
-    - r-boomspikeslab >=1.2.3
+    - r-boom >=0.9.11
+    - r-boomspikeslab >=1.2.5
     - r-xts
     - r-zoo >=1.8
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - r-boom >=0.9.6
-    - r-boomspikeslab >=1.2.3
+    - r-boom >=0.9.11
+    - r-boomspikeslab >=1.2.5
     - r-xts
     - r-zoo >=1.8
 
@@ -62,20 +62,3 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - Yue-Li-atBain
-
-# Package: bsts
-# Version: 0.9.5
-# Date: 2020-04-29
-# Title: Bayesian Structural Time Series
-# Author: Steven L. Scott <steve.the.bayesian@gmail.com>
-# Maintainer: Steven L. Scott <steve.the.bayesian@gmail.com>
-# Description: Time series regression using dynamic linear models fit using MCMC. See Scott and Varian (2014) <DOI:10.1504/IJMMNO.2014.059942>, among many other sources.
-# Depends: BoomSpikeSlab (>= 1.2.3), zoo (>= 1.8), xts, Boom (>= 0.9.6), R(>= 3.4.0)
-# Suggests: testthat
-# LinkingTo: Boom (>= 0.9.6)
-# License: LGPL-2.1 | file LICENSE
-# Encoding: UTF-8
-# NeedsCompilation: yes
-# Packaged: 2020-05-01 14:24:35 UTC; steve
-# Repository: CRAN
-# Date/Publication: 2020-05-02 15:00:02 UTC
