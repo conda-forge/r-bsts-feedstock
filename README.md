@@ -3,6 +3,7 @@ About r-bsts-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bsts-feedstock/blob/main/LICENSE.txt)
 
+
 About r-bsts
 ------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=bsts
 Package license: LGPL-2.1-only
 
 Summary: Time series regression using dynamic linear models fit using MCMC. See Scott and Varian (2014) <DOI:10.1504/IJMMNO.2014.059942>, among many other sources.
+
 About r-bsts
 ------------
 
@@ -146,7 +148,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
