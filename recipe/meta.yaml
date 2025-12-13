@@ -1,4 +1,4 @@
-{% set version = "0.9.10" %}
+{% set version = "0.9.11" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,12 +9,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bsts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bsts/bsts_{{ version }}.tar.gz
-  sha256: a302bc08d04ef8de83a7bf8dce03e949cadb423361bd85f9ad5dac77918271b1
+  sha256: 91355608144ca5ec0fc2c0b763a2012fa025974930cd340674f11a8bc9f43cd5
 
 build:
   # Checking windows to see if it passes. Uncomment the line if it fails.
   # skip: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
