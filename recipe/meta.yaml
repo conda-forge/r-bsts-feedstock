@@ -18,6 +18,10 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -33,15 +37,15 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
   host:
-    - r-base
-    - r-boom >=0.9.11
-    - r-boomspikeslab >=1.2.5
+    - r-base >=4.5
+    - r-boom >=0.9.16
+    - r-boomspikeslab >=1.2.7
     - r-xts
     - r-zoo >=1.8
   run:
-    - r-base
-    - r-boom >=0.9.11
-    - r-boomspikeslab >=1.2.5
+    - r-base >=4.5
+    - r-boom >=0.9.16
+    - r-boomspikeslab >=1.2.7
     - r-xts
     - r-zoo >=1.8
 
@@ -52,11 +56,12 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=bsts
-  license: LGPL-2.1-only
+  license: LGPL-2.1-only OR MIT
   summary: Time series regression using dynamic linear models fit using MCMC. See Scott and Varian (2014) <DOI:10.1504/IJMMNO.2014.059942>, among many other sources.
   license_family: LGPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
